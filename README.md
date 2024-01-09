@@ -5,7 +5,7 @@
 - Tailwind CSS
 - FontAwesome Icon
 
-## [Live](https://glittering-semolina-cd6937.netlify.app
+## [Live](https://glittering-semolina-cd6937.netlify.app)
 
 # local usase:
 For optimal project execution, ensure the installation of the Live Server extension in Visual Studio Code.
