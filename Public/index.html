@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="">
+    <!-- Header start -->
+    <section class="Header py-5 bg-slate-100">
+      <div class="w-[96%] md:w-[90%] mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2 items-center">
+            <div class="">
+              <img
+                class="w-[50px]"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwDARe-8EI6wN54_wvti3mabnn_vJWzhqbuhYus2B18yaDtLzUoicpsWOm6LmcLYN3w8c&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <div class="md:block hidden">
+              <div class="flex gap-1">
+                <li class="list-none">
+                  <a href="" class="list-none font-bold">Home</a>
+                </li>
+                <li class="list-none"><a href="" class="">About</a></li>
+                <li class="list-none"><a href="" class="">Contact</a></li>
+                <li class="list-none"><a href="" class="">Services</a></li>
+                <li class="list-none"><a href="" class="">FAQs</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <div class="relative cart-icon">
+              <i class="fa-solid fa-cart-shopping text-2xl cursor-pointer"> </i>
+              <div
+                class="-top-4 -right-1 cart-number-container absolute bg-red-500 h-5 w-5 rounded-full flex items-center justify-center"
+              >
+                <p class="text-white text-sm cart-total-quantity">10</p>
+              </div>
+            </div>
+            <button class="bg-red-500 text-white py-2 px-3 rounded-full">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Products py-5">
+      <div class="w-[96%] md:w-[90%] mx-auto">
+        <div
+          class="product-list-container grid md:grid-cols-3 grid-cols-1 gap-4"
+        >
+          <div class="card rounded-lg shadow-2xl p-2">
+            <img
+              class="w-full rounded-lg shadow-slate-200 mb-5 shadow-2xl"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiZUqBCtmF5gd0UieJQR2OtwG9uQ1one2LSvZy_BHLzLTNmQZpwqhRpoW24Wsrz6Fw10&usqp=CAU"
+              alt=""
+            />
+            <p class="w-full mb-2">Product Name</p>
+            <button
+              class="addToCartBtn w-full px-3 py-2 rounded-full bg-slate-500 text-white"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="cart overflow-y-auto fixed px-2 py-3 w-[280px] h-[100vh] bg-black z-20 top-[75px] right-0  duration-500 translate-x-full"
+    >
+      <div class="card-header flex justify-between items-center">
+        <p class="text-white font-bold">CARD</p>
+        <i
+          class="fa-regular fa-circle-xmark fa-fw text-white text-xl cursor-pointer closeCart"
+        ></i>
+      </div>
+      <hr class="my-2" />
+      <div class="cart-items flex flex-col gap-2">
+        <div
+          class="cart-item grid grid-cols-3 items-center gap-2 relative border border-white"
+        >
+          <img src="" class="w-full h-[120px] col-span-1" alt="" />
+          <div class="col-span-2">
+            <p class="text-white mb-2">Product name</p>
+            <p class="text-white mb-1 text-sm">$100/each</p>
+            <div class="flex items-center">
+              <button
+                class="bg-white h-[30px] pl-3 rounded-tl-full rounded-bl-full"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <input
+                class="h-[30px] w-[50px] outline-none text-center font-bold text-red-500 quntityDisplay"
+                type="text"
+              />
+              <button
+                class="bg-white opacity-40 h-[30px] pr-3 rounded-tr-full rounded-br-full"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <p class="bottom-2 text-white absolute right-2 subtotal">$500</p>
+          <div
+            class="bg-white absolute -top-2 right-0 p-1 rounded-lg cursor-pointer"
+          >
+            <i class="fa-solid fa-trash text-red-500 text-xl"></i>
+          </div>
+        </div>
+        <div
+          class="cart-item grid grid-cols-3 items-center gap-2 relative border border-white"
+        >
+          <img src="" class="w-full h-[120px] col-span-1" alt="" />
+          <div class="col-span-2">
+            <p class="text-white mb-2">Product name</p>
+            <p class="text-white mb-1 text-sm">$100/each</p>
+            <div class="flex items-center">
+              <button
+                class="bg-white h-[30px] pl-3 rounded-tl-full rounded-bl-full"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <input
+                class="h-[30px] w-[50px] outline-none text-center font-bold text-red-500"
+                type="text"
+              />
+              <button
+                class="bg-white h-[30px] pr-3 rounded-tr-full rounded-br-full"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <p class="bottom-2 text-white absolute right-2">$500</p>
+          <div
+            class="bg-white absolute -top-2 right-0 p-1 rounded-lg cursor-pointer"
+          >
+            <i class="fa-solid fa-trash text-red-500 text-xl"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="logic.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a43606f0ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

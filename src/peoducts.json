@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1ac400fd-98bd-46ee-b4e8-d2f983f2bbc2",
+    "Name": "Cake",
+    "Price": 11.0,
+    "ImageUrl": "https://www.cakehut.in/image/cache/catalog/2021%20cake%20photos/Double%20Chocolatee-600x600w.jpg.webp",
+    "IsPopular": true,
+    "IsRecommended": true
+  },
+  {
+    "Id": "38332e95-7f66-45af-829b-c51b3d23caba",
+    "Name": "Chicken Fry",
+    "Price": 25.0,
+    "ImageUrl": "https://www.cubesnjuliennes.com/wp-content/uploads/2018/12/Spicy-Chicken-Fry-Recipe.jpg",
+    "IsPopular": true,
+    "IsRecommended": true
+  },
+  {
+    "Id": "39487b87-09e0-4e6c-acfa-6ac907e0742a",
+    "Name": "Fried Rice",
+    "Price": 9.0,
+    "ImageUrl": "https://www.allrecipes.com/thmb/G96Vc_7F5Dm0csJJb2STC6tO97k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/79543-fried-rice-restaurant-style-mfs-49-79b33da67e2643e8b585972cd92c5821.jpg",
+    "IsPopular": true,
+    "IsRecommended": false
+  },
+  {
+    "Id": "a3ef9e36-c7ee-48c5-99e2-6f966157e116",
+    "Name": "Garlic Bread",
+    "Price": 24.75,
+    "ImageUrl": "https://www.shutterstock.com/image-photo/plate-delicious-homemade-garlic-bread-260nw-1359841442.jpg",
+    "IsPopular": true,
+    "IsRecommended": true
+  },
+  {
+    "Id": "1280cb1b-9115-45c5-babd-601febd462de",
+    "Name": "Burger",
+    "Price": 10.99,
+    "ImageUrl": "https://img.freepik.com/free-photo/grilled-gourmet-burger-with-cheese-tomato-onion-french-fries-generated-by-artificial-intelligence_25030-63181.jpg",
+    "IsPopular": true,
+    "IsRecommended": false
+  },
+  {
+    "Id": "14f0a9d0-49f9-4020-a656-e23b7ac59216",
+    "Name": "Pizza",
+    "Price": 8.5,
+    "ImageUrl": "https://www.southernliving.com/thmb/3x3cJaiOvQ8-3YxtMQX0vvh1hQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg",
+    "IsPopular": true,
+    "IsRecommended": true
+  },
+  {
+    "Id": "f6fdc153-052a-4eab-8b7d-bb1478d2179c",
+    "Name": "Pasta",
+    "Price": 3.0,
+    "ImageUrl": "https://www.thecountrycook.net/wp-content/uploads/2023/02/thumbnail-Penne-Pasta-with-Tomato-Sauce-scaled.jpg",
+    "IsPopular": true,
+    "IsRecommended": true
+  },
+  {
+    "Id": "2b1bca6f-f7d6-4854-86dd-126db70776a2",
+    "Name": "Cappuchino",
+    "Price": 3.0,
+    "ImageUrl": "https://img.freepik.com/premium-photo/close-up-shot-latte-coffee-with-latte-art-ceramic-white-cup-saucer-white-background_659151-1130.jpg",
+    "IsPopular": true,
+    "IsRecommended": true
+  }
+]
