@@ -45,14 +45,18 @@ cartIcon.addEventListener("click", displayCart)
 closeCartIcon.addEventListener("click", closeCart)
 addToCartBtnElm.addEventListener("click", handleAddToCart)
 
+
+
 const displayProductsData = (data) => {
     ProductListContainerElm.innerHTML = '';
-
-    const filterdata = data.filter(fd => fd.Id == cartItems.productId)
-    console.log(filterdata)
-
+    
     if (data.length > 0) {
+
         data.forEach(product => {
+
+
+        
+
             let newProduct = document.createElement("div");
             let classLists = "card rounded-lg shadow-2xl p-2";
 
@@ -68,7 +72,7 @@ const displayProductsData = (data) => {
             <p class="w-full mb-2">${product.Name}</p>
             <p class="w-full mb-2">$${product.Price}/each</p>
             <button
-                class="addToCartBtn w-full px-3 py-2 rounded-full bg-red-500 text-white"
+                class="addToCartBtn w-full bg-red-500 px-3 py-2 rounded-full text-white"
                 onclick="addToCart('${product.Id}', '${product.Name}', '${product.Price}', '${product.ImageUrl}',event)"
             >
                 Add to cart
@@ -81,11 +85,11 @@ const displayProductsData = (data) => {
     }
 
 }
-cartTotalQuantityElm.innerText=0
-const addToCart = (id, name, price, image,event) => {
-    
-    let targetElm=event.target
+cartTotalQuantityElm.innerText = 0
+const addToCart = (id, name, price, image, event) => {
   
+    let targetElm = event.target
+
     targetElm.classList.add("bg-slate-500");
     targetElm.classList.remove("bg-red-500");
 
@@ -93,38 +97,13 @@ const addToCart = (id, name, price, image,event) => {
     cart.classList.remove("translate-x-full")
 
     cartItemsContainerEl.innerHTML = ""
-    
-    
-
-    // const allraedyOne=cartItems.find(cartItem=>cartItem)
-    // if (cartItems.length <= 0) {
-    //     cartItems = [
-    //         {
-    //             productId: id,
-    //             quantity: 1
-    //         }
-    //     ]
-    // }
-    // else if (cartItems.productId != id) {
-    //     cartItems.push(
-    //         {
-    //             productId: id,
-    //             quantity: 1
-    //         }
-    //     )
-    // }
-    // else {
-    //     console.log(`${id} already exist`)
-    // }
-
-    // console.log(cartItems)
 
     const existingCartItem = cartItems.find(cartItem => cartItem.productId === id);
 
     if (!existingCartItem) {
-        cartTotalQuantityElm.innerText=cartItems.length+1
-     
-        // If the product is not in the cart, add it with a quantity of 1
+        cartTotalQuantityElm.innerText = cartItems.length + 1
+
+       
         cartItems.push({
             productId: id,
             productImage: image,
@@ -133,59 +112,18 @@ const addToCart = (id, name, price, image,event) => {
             quantity: 1
         });
 
-        
-        
-        console.log(addToCartBtnElm)
+
+
+
     } else {
-        // If the product is already in the cart, log a message
+    
         console.log(`${id} already exists in the cart`);
     }
 
-    console.log(cartItems)
+
     displayCartData()
 
 }
-// const decreaseQuantity = (id) => {
-
-//     // let filterData = cartItems.filter(item => item.productId == id)
-//     // let{quantity}=filterData
-//     // quantity=quantity+1
-
-//     const index = cartItems.findIndex(item => item.productId == id);
-
-//     // If the item with the given id is found in cartItems
-//     if (index !== -1) {
-//         // Increase the quantity of that item
-//         if (cartItems[index].quantity > 1) {
-//             const quntityDisplayElm = document.querySelector(".quntityDisplay")
-//             cartItems[index].quantity -= 1;
-//             quntityDisplayElm.value = cartItems[index].quantity
-//         }
-
-
-//     }
-
-
-// }
-// const increaseQuantity = (id) => {
-
-//     // let filterData = cartItems.filter(item => item.productId == id)
-//     // let{quantity}=filterData
-//     // quantity=quantity+1
-
-//     const index = cartItems.findIndex(item => item.productId == id);
-
-//     // If the item with the given id is found in cartItems
-//     if (index !== -1) {
-//         // Increase the quantity of that item
-//         const quntityDisplayElm = document.querySelector(".quntityDisplay")
-//         cartItems[index].quantity += 1;
-//         quntityDisplayElm.value = cartItems[index].quantity
-
-//     }
-
-
-// }
 
 
 const displayCartData = () => {
@@ -197,7 +135,7 @@ const displayCartData = () => {
         cartItems?.map((cartProduct, index) => {
             subToatl = subToatl + cartProduct.productPrice * cartProduct.quantity
             quantity = quantity + cartProduct.quantity
-            // const filterCartData=cartItems.filter(cartItem=>cartItem.productId==cartProduct.Id)
+           
 
             const cartProduts = document.createElement("div")
             let classLists = "cart-item grid grid-cols-3 items-center gap-2 relative border border-white";
@@ -242,11 +180,11 @@ const displayCartData = () => {
 
         })
     }
-    // increaseQuantity()
+   
 }
 
 function deleteFromCart(idx) {
-    cartTotalQuantityElm.innerText=cartItems.length-1
+    cartTotalQuantityElm.innerText = cartItems.length - 1
     cartItems.splice(idx, 1);
     displayCartData()
 }
